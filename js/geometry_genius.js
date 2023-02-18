@@ -157,7 +157,7 @@ function displayData(areaName,areaBase,areaHeight,areaTotal,button){
       <td>${areaName}</td>
    
       <td>${areaTotal} cm <sup>2</sup></td>
-      <td><button>Convert to m <sup>2</sup></button></td>
+      <td><button class="bg-sky-500 p-2 text-white">Convert to m <sup>2</sup></button></td>
 
 
     `;
@@ -165,5 +165,6 @@ function displayData(areaName,areaBase,areaHeight,areaTotal,button){
     container.appendChild(tr);//append tr...into parent
     
 }
+//agula create tr ar moddhe thakbe
  //   <td>${areaBase}</td>
     //   <td>${areaHeight}</td>
