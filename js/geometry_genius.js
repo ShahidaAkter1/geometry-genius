@@ -26,7 +26,7 @@ document.getElementById('first-card').addEventListener('click',function(){
          return alert ("please enter any valid number");
      }
 
-    const areaTotal=(0.5) * (areaBase) * (areaHeight);
+    const areaTotal=(0.5) * (areaBase) * (areaHeight).toFixed(2);
     // console.log(areaTotal,typeof areaTotal);
         //show the data
         displayData(areaName,areaBase,areaHeight,areaTotal);//function call 
@@ -50,7 +50,7 @@ document.getElementById('second-card').addEventListener('click',function(){
          return alert ("please enter any valid number");
      }
 
-    const areaTotal=  (areaBase) * (areaHeight);
+    const areaTotal=  (areaBase) * (areaHeight).toFixed(2);
     // console.log(areaTotal,typeof areaTotal);
    
         //show the data
