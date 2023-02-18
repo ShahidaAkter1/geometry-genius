@@ -22,7 +22,7 @@ document.getElementById('first-card').addEventListener('click',function(){
          return alert ("please enter any valid number");
      }
 
-    const areaTotal=(0.5) * (areaBase) * (areaHeight).toFixed(2);
+    const areaTotal=(0.5) * (areaBase) * (areaHeight);
     // console.log(areaTotal,typeof areaTotal);
         //show the data
         displayData(areaName,areaBase,areaHeight,areaTotal);//function call 
@@ -46,7 +46,7 @@ document.getElementById('second-card').addEventListener('click',function(){
          return alert ("please enter any valid number");
      }
 
-    const areaTotal=  (areaBase) * (areaHeight).toFixed(2);
+    const areaTotal=  (areaBase) * (areaHeight);
     // console.log(areaTotal,typeof areaTotal);
    
         //show the data
@@ -68,7 +68,7 @@ document.getElementById('third-card').addEventListener('click',function(){
      document.getElementById('third-input-length').value="";
  
     //  validation
-     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0 ){
+     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0  ){
          return alert ("please enter any valid number");
      }
 
@@ -81,7 +81,7 @@ document.getElementById('third-card').addEventListener('click',function(){
        
      })
 
-     //for 4th card..using html id
+//for 4th card..using html id
 document.getElementById('fourth-card').addEventListener('click',function(){
     // console.log('click');
     serial +=1;
@@ -90,25 +90,27 @@ document.getElementById('fourth-card').addEventListener('click',function(){
     const areaDiagonal=document.getElementById('fourth-diagonal').innerText;
     const areaDiagonal2=document.getElementById('fourth-diagonal2').innerText;
   
-    const areaTotal= parseFloat(0.5*areaDiagonal*areaDiagonal2).toFixed(2);//total  
+    const areaTotal= parseFloat(areaDiagonal*areaDiagonal2).toFixed(2);//total  
     //show the data
     displayData(areaName,areaDiagonal,areaDiagonal2,areaTotal);//function call
    
 })
-     //for 5th card..using html id
+
+//for 5th card..using html id
 document.getElementById('fifth-card').addEventListener('click',function(){
     // console.log('click');
     serial +=1;
     //get the data from html using id
     const areaName=document.getElementById('fifth-name').innerText;
-    const areaSide=document.getElementById('fifth-side').innerText;
     const areaBase=document.getElementById('fifth-base').innerText;
+    const areaHeight=document.getElementById('fifth-height').innerText;
   
-    const areaTotal= parseInt(0.5*areaSide*areaBase).toFixed(2);//total
+    const areaTotal= parseFloat(0.5*areaBase*areaHeight).toFixed(2);//total  
     //show the data
-    displayData(areaName,areaSide,areaBase,areaTotal);//function call
+    displayData(areaName,areaBase,areaHeight,areaTotal);//function call
    
 })
+
      //for 6th card..using html id
 document.getElementById('six-card').addEventListener('click',function(){
     // console.log('click');
