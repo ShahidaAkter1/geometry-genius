@@ -22,7 +22,7 @@ document.getElementById('first-card').addEventListener('click',function(){
  
     //  validation
    
-     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0){
+     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0 || isNaN(areaBase) || isNaN(areaHeight)){
          return alert ("please enter any valid number");
      }
 
@@ -46,7 +46,7 @@ document.getElementById('second-card').addEventListener('click',function(){
      document.getElementById('second-input-length').value="";
  
     //  validation
-     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0 ){
+     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0 || isNaN(areaBase) || isNaN(areaHeight)){
          return alert ("please enter any valid number");
      }
 
@@ -72,7 +72,7 @@ document.getElementById('third-card').addEventListener('click',function(){
      document.getElementById('third-input-length').value="";
  
     //  validation
-     if(areaBase == "" || areaHeight =="" || areaBase <= 0 || areaHeight <=0 ){
+     if(areaBase == "" || areaHeight =="" || areaBase <= 0 || areaHeight <=0 || isNaN(areaBase) || isNaN(areaHeight)){
          return alert ("please enter any valid number");
      }
 
