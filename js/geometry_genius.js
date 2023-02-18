@@ -1,5 +1,9 @@
 //Blog button
-
+document.getElementById('btn-blog').addEventListener('click',function(){
+    window.location.href='blog.html';
+    // window.open(
+    //     "blog.html", "_blank");//new tab open
+});
 
 // card part start
 let=serial =0;
@@ -68,7 +72,7 @@ document.getElementById('third-card').addEventListener('click',function(){
      document.getElementById('third-input-length').value="";
  
     //  validation
-     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0  ){
+     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0 ){
          return alert ("please enter any valid number");
      }
 
