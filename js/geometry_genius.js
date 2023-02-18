@@ -6,7 +6,7 @@ document.getElementById('btn-blog').addEventListener('click',function(){
 });
 
 // card part start
-let=serial =0;
+let serial =0;
 //first card
 document.getElementById('first-card').addEventListener('click',function(){
   
@@ -72,7 +72,7 @@ document.getElementById('third-card').addEventListener('click',function(){
      document.getElementById('third-input-length').value="";
  
     //  validation
-     if(areaBase == '' || areaHeight =='' || areaBase <= 0 || areaHeight <=0 ){
+     if(areaBase == "" || areaHeight =="" || areaBase <= 0 || areaHeight <=0 ){
          return alert ("please enter any valid number");
      }
 
