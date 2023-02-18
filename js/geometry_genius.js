@@ -146,6 +146,7 @@ document.getElementById('six-card').addEventListener('click',function(){
         return areaHeight;
      }
 
+
   //common function to display data
 function displayData(areaName,areaBase,areaHeight,areaTotal,button){
     // create table row
@@ -154,12 +155,15 @@ function displayData(areaName,areaBase,areaHeight,areaTotal,button){
     tr.innerHTML = `
       <td>${serial}</td>
       <td>${areaName}</td>
-      <td>${areaBase}</td>
-      <td>${areaHeight}</td>
-      <td>${areaTotal}</td>
-      
-     
+   
+      <td>${areaTotal} cm <sup>2</sup></td>
+      <td><button>Convert to m <sup>2</sup></button></td>
+
 
     `;
+   
     container.appendChild(tr);//append tr...into parent
+    
 }
+ //   <td>${areaBase}</td>
+    //   <td>${areaHeight}</td>

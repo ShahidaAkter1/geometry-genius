@@ -24,6 +24,8 @@ function randomColor() {
   document.getElementById('color-6').addEventListener("mouseover", function(e){
    e.target.style.backgroundColor = randomColor();
   });
+
+
 //   document.getElementById('color-2').addEventListener("mouseover", function(){
 //     document.body.style.backgroundColor = randomColor();
 //   });
@@ -31,6 +33,7 @@ function randomColor() {
 //     document.body.style.backgroundColor = randomColor();
 //   });
   
+
 //   document.querySelector('color-1').addEventListener('mouseover', event => {
 //         event.target.style.fill = randomColor();
 //   });
